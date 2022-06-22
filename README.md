@@ -3,7 +3,7 @@ Curso practico de JavaScript - Curso de Platzi
 
 ...
 
-##Taller #1: figuras geometricas.
+## Taller #1: figuras geometricas.
 
 - Primer paso: definir las formulas
 - Segundo paso: implementar las formulas en JavaScript
