@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos1.css">
     <title>Figuras Geometricas | Curso Practico de JS</title>
 </head>
 <body>
     <header>
         <h1>
-            Figuras Geometricas
+            Calculadora de Figuras Geometricas
         </h1>
         <p>Este es el primer taller del curso practico de JavaScript</p>
     </header>
@@ -67,6 +68,51 @@
             </button>
         </form>
     </section>
+
+    <section>
+        <h2>Calcula la altura de un triangulo isosceles</h2>
+        <form action="">
+            <label>
+                Escribe la longitud de los 3 lados del circulo
+            </label>
+            <input id="ladoA" type="number" placeholder="Lado 1 del Triangulo">
+            <input id="ladoB" type="number" placeholder="Lado 2 del Triangulo">
+            <input id="base" type="number" placeholder="Base">
+            <button type="button" onclick="calcularAlturaTrianguloI()">
+                Calcular Altura
+            </button>
+        </form>
+    </section>
     <script src="./figuras.js"></script>
+    <div class="card">
+      <div class="thumbnail"><img class="left" src="https://www.seekpng.com/png/detail/239-2392531_circulo-amarillo-png-circle.png"/></div>
+      <div class="right">
+        <h1 class="titulo">El Ciruclo</h1>
+        <div class="separator"></div>
+        <section class="circulo">
+            <form action="InputCuadrado">
+                <label>
+                    Escribe cuanto mide cada lado de nuestro cuadrado
+                </label>
+                <input id="InputCuadrado" type="number">
+                <button type="button" onclick="calcularPerimetroCuadrado()">
+                    Calcular el perimetro
+                </button>
+                <button type="button" onclick="calcularAreaCuadrado()">
+                    Calcular el Area
+                </button>
+            </form>
+        </section>
+      </div>
+      <h5>Ciruclo</h5>
+      <h6>Perimetro y Area</h6>
+      <ul>
+        <li><i class="fa fa-eye fa-2x"></i></li>
+        <li><i class="fa fa-heart-o fa-2x"></i></li>
+        <li><i class="fa fa-envelope-o fa-2x"></i></li>
+        <li><i class="fa fa-share-alt fa-2x"></i></li>
+      </ul>
+      <div class="fab"><i class="fa fa-arrow-down fa-3x"></i></div>
+    </div> 
 </body>
 </html>

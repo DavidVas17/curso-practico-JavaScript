@@ -117,3 +117,26 @@ function calcularAreaCirculo(){
     const area = areaCirculo(value); 
     alert(area);
 }
+
+// Triangulo Isosceles
+function alturaTriangulo(ladoA, ladoB, base) {
+    if (ladoA != ladoB) {
+        alert("Los valores de los dos lados no son iguales - los dos lados tienen que tener la misma longitud! \n Intentelo de nuevo")
+    }else{
+    return Math.sqrt((ladoA*ladoB) - base*base/4);
+    }
+}
+
+function calcularAlturaTrianguloI() {
+    const lado1 = document.getElementById("ladoA");
+    const valueLadoA = lado1.value;
+
+    const lado2 = document.getElementById("ladoB");
+    const valueLadoB = lado2.value;
+
+    const base = document.getElementById("base");
+    const valueBase = base.value;
+
+    const altura = alturaTriangulo(valueLadoA, valueLadoB, valueBase);
+    alert(altura);
+}
