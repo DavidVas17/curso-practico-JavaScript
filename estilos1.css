@@ -1,3 +1,6 @@
+body{
+  margin: 0px;
+}
 h1{
   text-align: center;
   padding: 10px;
@@ -8,9 +11,14 @@ h1{
 
 .card{
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 p{
   text-align: center;
   font-weight: bold;
+}
+
+.row{
+  margin-right: 0px;
 }
