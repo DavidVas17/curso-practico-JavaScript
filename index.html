@@ -12,7 +12,28 @@
     <link rel="stylesheet" href="./estilos1.css">
 </head>
 <body>
-    <h1>Talleres JavaScript</h1>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg mb-4">
+        <div class="container-fluid">
+          <a class="navbar-brand">{ }Taller JavaScript</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
@@ -26,8 +47,8 @@
                   <div class="form-text">La unidad de medida es Centimetro.</div>
                 </div>
                 <p id="resultCuadrado"></p>
-                <button type="button" onclick="calcularPerimetroCuadrado()" class="btn btn-primary">Perimetro</button>
-                <button type="button" onclick="calcularAreaCuadrado()" class="btn btn-primary">Area</button>
+                <button type="button" onclick="calcularPerimetroCuadrado()" class="btn btn-primary">Calcular perimetro</button>
+                <button type="button" onclick="calcularAreaCuadrado()" class="btn btn-primary">Calcular área</button>
               </form>
             </div>
           </div>
@@ -35,10 +56,26 @@
 
         <div class="col">
           <div class="card">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="https://cdn.pixabay.com/photo/2016/12/26/18/33/logo-1932539_960_720.png" class="card-img-top" alt="300px" height="300px" style="object-fit: cover;">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <h5 class="card-title">Calcular área y perimetro de un triangulo</h5>
+              <form action="">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Cuanto miden los lados y la base de nuestro triangulo:</label>
+                  <input id="InputTrianguloLado1" class="form-control mb-2" type="number" placeholder="Lado 1">
+                  <input id="InputTrianguloLado2" class="form-control mb-2" type="number" placeholder="Lado 2">
+                  <input id="InputTrianguloBase" class="form-control mb-2" type="number" placeholder="Base">
+                  <input id="InputTrianguloAltura" class="form-control mb-2" type="number" placeholder="Altura">
+                  <div class="form-text">La unidad de medida es Centimetro. <strong>Ojo: Para calcular el <i>área</i> solo colocar Base y Altura</strong> </div>
+                </div>
+                <p id="resultTriangulo"></p>
+                <button type="button" class="btn btn-primary" onclick="calcularPerimetroTriangulo()">
+                    Calcular el perimetro
+                </button>
+                <button type="button" class="btn btn-primary" onclick="calcularAreaTriangulo()">
+                    Calcular área
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -52,7 +89,7 @@
             </div>
           </div>
         </div>
-        
+    
         <div class="col">
           <div class="card">
             <img src="..." class="card-img-top" alt="...">
@@ -63,6 +100,8 @@
           </div>
         </div>
       </div>
+
+
       <script src="./figuras.js"></script>
 </body>
 </html>
