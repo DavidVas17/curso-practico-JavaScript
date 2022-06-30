@@ -13,12 +13,14 @@
 </head>
 <body>
     <h1>Talleres JavaScript</h1>
-    <div class="card border-warning mb-3" style="width: 18rem;">
-        <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/cubo-solido-geometrico-formado-por-seis-quadrados-578934b78b03d.jpg" class="card-img-top" alt="200px" height="200px">
-        <div class="card-body">
-            <form action="InputCuadrado">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/cubo-solido-geometrico-formado-por-seis-quadrados-578934b78b03d.jpg" class="card-img-top" alt="300px" height="300px" style="object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Perimetro y Area de un Cuadrado</h5>
+              <form action="InputCuadrado">
                 <div class="mb-3">
-                    <p>Calcular el Area y Perimetro de un Cuadrado</p>
                   <label for="exampleInputEmail1" class="form-label">Cuanto mide cada lado de nuestro cuadrado:</label>
                   <input type="number" class="form-control" id="InputCuadrado" aria-describedby="number" placeholder="15cm">
                   <div class="form-text">La unidad de medida es Centimetro.</div>
@@ -27,6 +29,38 @@
                 <button type="button" onclick="calcularPerimetroCuadrado()" class="btn btn-primary">Perimetro</button>
                 <button type="button" onclick="calcularAreaCuadrado()" class="btn btn-primary">Area</button>
               </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
         </div>
       </div>
       <script src="./figuras.js"></script>
