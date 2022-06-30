@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>Talleres JavaScript</title>
+    <link rel="stylesheet" href="./estilos1.css">
+</head>
+<body>
+    <h1>Talleres JavaScript</h1>
+    <div class="card border-warning mb-3" style="width: 18rem;">
+        <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/cubo-solido-geometrico-formado-por-seis-quadrados-578934b78b03d.jpg" class="card-img-top" alt="200px" height="200px">
+        <div class="card-body">
+            <form action="InputCuadrado">
+                <div class="mb-3">
+                    <p>Calcular el Area y Perimetro de un Cuadrado</p>
+                  <label for="exampleInputEmail1" class="form-label">Cuanto mide cada lado de nuestro cuadrado:</label>
+                  <input type="number" class="form-control" id="InputCuadrado" aria-describedby="number" placeholder="15cm">
+                  <div class="form-text">La unidad de medida es Centimetro.</div>
+                </div>
+                <p id="resultCuadrado"></p>
+                <button type="button" onclick="calcularPerimetroCuadrado()" class="btn btn-primary">Perimetro</button>
+                <button type="button" onclick="calcularAreaCuadrado()" class="btn btn-primary">Area</button>
+              </form>
+        </div>
+      </div>
+      <script src="./figuras.js"></script>
+</body>
+</html>

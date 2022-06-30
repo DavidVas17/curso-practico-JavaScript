@@ -24,4 +24,13 @@ Curso practico de JavaScript - Curso de Platzi
 - Tercer paso: crear funciones
 - Cuarto paso: integrar JavaScipt con HTML
 
+## Taller #4: Mediana de Salarios.
+
+- Primer paso: definir las formulas
+- Segundo paso: implementar las formulas en JavaScript
+- Tercer paso: crear funciones
+- Cuarto paso: integrar JavaScipt con HTML
+
+
+
 
