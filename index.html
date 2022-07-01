@@ -37,7 +37,7 @@
         </div>
       </nav>
 
-    <div class="row row-cols-0 row-cols-md-3 g-4">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
           <div class="card">
             <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/cubo-solido-geometrico-formado-por-seis-quadrados-578934b78b03d.jpg" class="card-img-top" alt="300px" height="300px" style="object-fit: cover;">
@@ -45,12 +45,12 @@
               <h5 class="card-title">Perimetro y Area de un Cuadrado</h5>
               <form action="InputCuadrado">
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Cuanto mide cada lado de nuestro cuadrado:</label>
+                  <label class="form-label">Cuanto mide cada lado de nuestro cuadrado:</label>
                   <input type="number" class="form-control" id="InputCuadrado" aria-describedby="number" placeholder="15cm">
                   <div class="form-text">La unidad de medida es Centimetro.</div>
                 </div>
-                <p id="resultCuadrado"></p>
-                <button type="button" onclick="calcularPerimetroCuadrado()" class="btn btn-primary">Calcular perimetro</button>
+                <p id="resultCuadrado" style="color: rgb(194, 187, 4);"></p>
+                <button type="button" onclick="calcularPerimetroCuadrado()" class="btn btn-primary mb-1">Calcular perimetro</button>
                 <button type="button" onclick="calcularAreaCuadrado()" class="btn btn-primary">Calcular área</button>
               </form>
             </div>
@@ -64,15 +64,15 @@
               <h5 class="card-title">Calcular área y perimetro de un triangulo</h5>
               <form action="">
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Cuanto miden los lados y la base de nuestro triangulo:</label>
+                  <label class="form-label">Cuanto miden los lados y la base de nuestro triangulo:</label>
                   <input id="InputTrianguloLado1" class="form-control mb-2" type="number" placeholder="Lado 1">
                   <input id="InputTrianguloLado2" class="form-control mb-2" type="number" placeholder="Lado 2">
                   <input id="InputTrianguloBase" class="form-control mb-2" type="number" placeholder="Base">
                   <input id="InputTrianguloAltura" class="form-control mb-2" type="number" placeholder="Altura">
                   <div class="form-text">La unidad de medida es Centimetro. <strong>Ojo: Para calcular el <i>área</i> solo colocar Base y Altura</strong> </div>
                 </div>
-                <p id="resultTriangulo"></p>
-                <button type="button" class="btn btn-primary" onclick="calcularPerimetroTriangulo()">
+                <p id="resultTriangulo" style="color: rgb(194, 187, 4);"></p>
+                <button type="button" class="btn btn-primary mb-1" onclick="calcularPerimetroTriangulo()">
                     Calcular el perimetro
                 </button>
                 <button type="button" class="btn btn-primary" onclick="calcularAreaTriangulo()">
@@ -81,7 +81,33 @@
               </form>
             </div>
           </div>
-        </div>""
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <img src="https://png.pngtree.com/element_origin_min_pic/00/00/07/135785aaae1e190.jpg" class="card-img-top" alt="300px" height="300px" style="object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Calcular área y perimetro de un circulo</h5>
+              <form action="">
+                <div class="mb-3">
+                  <label class="form-label">Escibe el radio del circulo:</label>
+                  <input id="radio" class="form-control mb-2" type="number" placeholder="área del circulo">
+                  <div class="form-text">La unidad de medida es Centimetro.</div>
+                </div>
+                <p id="resultCirculo" style="color: rgb(194, 187, 4);"></p>
+                <button type="button" class="btn btn-primary mb-1" onclick="calcularDiametroCirculo()">
+                  Calcular el diamentro
+                </button>
+                <button type="button" class="btn btn-primary mb-1" onclick="calcularCircunferenciaCirculo()">
+                  Calcular la circunferencia
+                </button>
+                <button type="button" class="btn btn-primary" onclick="calcularAreaCirculo()">
+                  Calcular el área
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Footer -->

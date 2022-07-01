@@ -107,23 +107,30 @@ function calcularDiametroCirculo(){
     const value = input.value;
 
     const diamentro = diametroCirculo(value); 
-    alert(diamentro);
+
+    const resultadoCirculoD = document.getElementById("resultCirculo");
+    return resultadoCirculoD.innerText = "El Diametro son: "+diamentro+"cm";
+
 }
 
 function calcularCircunferenciaCirculo(){
     const input = document.getElementById("radio");
     const value = input.value;
 
-    const circunferencia = perimetroCirculo(value); 
-    alert(circunferencia);
+    const circunferencia = parseInt(perimetroCirculo(value)); 
+    
+    const resultadoCirculoC = document.getElementById("resultCirculo");
+    return resultadoCirculoC.innerText = "La Circunferencia es de: "+circunferencia+"cm";
 }
 
 function calcularAreaCirculo(){
     const input = document.getElementById("radio");
     const value = input.value;
 
-    const area = areaCirculo(value); 
-    alert(area);
+    const area = parseInt(areaCirculo(value)); 
+
+    const resultadoCirculoA = document.getElementById("resultCirculo");
+    return resultadoCirculoA.innerText = "El Área es de: "+area+"cm";
 }
 
 // Triangulo Isosceles
